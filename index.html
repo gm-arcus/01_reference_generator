@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+ 
+    <div class="container">
+
+        <img src="https://arcus-website-s3-assets.s3.amazonaws.com/content/2022/03/02/ccaeArcus-MC_logo.svg" alt="">
+
+
+        <p class="about">
+            Use this tool to validate Arcus Pay Network payment references.
+            <a href="https://developers.arcusfi.com/docs/arcus-pay-network/ZG9jOjIxMzEyNDA2-payment-reference-version-1-0">Read the docs.</a>
+        </p>
+
+        <div class="text-inputs">
+            <input type="text" maxlength="7" pattern="[0-9]+" id="payee_id_input" placeholder="Payee ID">
+            <input type="text" maxlength="18" id="account_input" placeholder="Account Number">
+        </div>
+
+        <div class="reference">
+            <p>
+                <span>AP001</span><span id="payee_id">0000000</span><span id="account_id">000000000000000000</span><span
+                    id="check_digit">CD</span>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

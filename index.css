@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container {
+    width: 600px;
+    max-width: 90%;
+    background-color: white;
+    justify-self: center;
+    padding: 2rem;
+    border-radius: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+img{
+    width: 100px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: .5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    transition: box-shadow 300ms ease-out;
+}
+
+#payee_id_input:focus, 
+#payee_id_input:active {
+    outline: 0;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(5, 137, 130);
+}
+
+#account_input:focus, 
+#account_input:active    {
+    outline: 0;
+    border: none;
+    box-shadow: 0px 0px 5px #EB4D44;
+}
+
+
+.reference {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    color: grey;
+}
+
+#payee_id {
+    color: rgb(5, 137, 130);
+}
+
+
+#account_id {
+    color: #EB4D44;
+}
+
+@media (min-width: 400px) {
+    .text-inputs {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 45%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+    
+}
